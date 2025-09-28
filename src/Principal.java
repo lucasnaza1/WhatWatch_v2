@@ -3,8 +3,16 @@ public class Principal {
         Movie firstMovie = new Movie();
         firstMovie.name = "Jogos Mortais";
         firstMovie.releaseYear = 2001;
+        firstMovie.description  = "Um jogo mortal onde vítimas enfrentam testes cruéis para sobreviver.";
         firstMovie.genre = "Terror";
 
-        System.out.println(firstMovie.name);
+        firstMovie.showDetails();
+        firstMovie.setAllRating(8);
+        firstMovie.setAllRating(7);
+        firstMovie.setAllRating(9.4);
+
+        System.out.println(firstMovie.allRating);
+        System.out.println(firstMovie.totalRatings);
+        System.out.println(firstMovie.averageRating());
     }
 }
