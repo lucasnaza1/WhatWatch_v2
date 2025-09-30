@@ -11,8 +11,7 @@ public class Principal {
         firstMovie.setAllRating(7);
         firstMovie.setAllRating(9.4);
 
-        System.out.println(firstMovie.allRating);
-        System.out.println(firstMovie.totalRatings);
+        System.out.println("Total de avaliações: " + firstMovie.getTotalRatings());
         System.out.println(firstMovie.averageRating());
     }
 }

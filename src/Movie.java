@@ -4,8 +4,12 @@ public class Movie {
     String description;
     int releaseYear;
     boolean included;
-    double allRating;
-    int totalRatings;
+    private double allRating;
+    private int totalRatings;
+
+    int getTotalRatings() {
+        return totalRatings;
+    }
 
     void showDetails() {
         System.out.println("Nome do filme: " + name);
