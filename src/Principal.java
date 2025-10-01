@@ -1,3 +1,5 @@
+import br.com.nazadev.whatwatch.modelos.Movie;
+
 public class Principal {
     public static void main(String[] args) {
         Movie firstMovie = new Movie();

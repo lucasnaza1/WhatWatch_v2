@@ -1,5 +1,7 @@
+package br.com.nazadev.whatwatch.modelos;
+
 public class Movie {
-    String name;
+     String name;
     String genre;
     String description;
     int releaseYear;
@@ -7,23 +9,23 @@ public class Movie {
     private double allRating;
     private int totalRatings;
 
-    int getTotalRatings() {
+    public int getTotalRatings() {
         return totalRatings;
     }
 
-    void showDetails() {
+    public void showDetails() {
         System.out.println("Nome do filme: " + name);
         System.out.println("Genêro: " + genre);
         System.out.println("Descrição: " + description);
         System.out.println("Lançado em: " + releaseYear);
     }
 
-    void setAllRating(double rate){
+    public void setAllRating(double rate){
         allRating += rate;
         totalRatings++;
     }
 
-    double averageRating() {
+    public double averageRating() {
         return allRating /= totalRatings;
     }
 };
